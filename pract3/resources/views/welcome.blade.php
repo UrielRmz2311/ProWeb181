@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+@extends('layouts.plantilla')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa</title>
+@section('titulo','Inicio')
 
-</head>
-<body>
-    <h1 class="display-1 text-center">HOME</h1>
+@section('contenido') 
+
+<h1 class="display-1 text-center text-primary">HOME</h1>
+
+@endsection
+
     
-</body>
-</html>

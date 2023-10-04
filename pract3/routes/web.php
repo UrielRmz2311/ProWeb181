@@ -13,19 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/form', function () {
-    return view('Formulario');
-});
-Route::get('/recuerdos', function () {
-    return view('Recuerdos');
-});
+// Rutas de tipo petición
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//Route::get('/form', function () {
+//    return view('Formulario');
+//});
+//Route::get('/recuerdos', function () {
+//    return view('Recuerdos');
+//});
 
-//Tipo view
-//Route::view('/', 'welcome');
-//Route::view('/form', 'Formulario');
-//Route::view('/recuerdos', 'Recuerdos');
+
+//Rutas tipo view
+Route::view('/', 'welcome')->name('ElIni');
+Route::view('/form', 'Formulario')->name('ElFormu');
+Route::view('/recuerdos', 'Recuerdos')->name('ElMemories');
 
 
