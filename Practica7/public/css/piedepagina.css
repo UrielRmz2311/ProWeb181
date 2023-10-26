@@ -1,0 +1,9 @@
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+    padding: 5px 0; /* Espaciado interno superior e inferior del pie de página */
+    position: fixed; /* Fija el pie de página en la ventana del navegador */
+    bottom: 0; /* Ancla el pie de página en la parte inferior de la ventana del navegador */
+    width: 100%; /* Establece el ancho del pie de página al 100% del ancho de la ventana */
+}

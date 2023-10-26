@@ -1,0 +1,11 @@
+/* public/css/styles.css */
+
+body {
+    background-image: url('/images/fondo.jpg'); /* Ruta de la imagen utilizando la raíz del sitio */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* Añade cualquier otra propiedad de fondo que desees, como color de fondo de respaldo si la imagen no se carga */
+    background-color: cornflowerblue;
+}

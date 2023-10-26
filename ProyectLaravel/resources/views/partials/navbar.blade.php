@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Diario Laravel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,10 +7,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('ElIni')}}">Inicio</a>
+            <a class="nav-link {{request()->routeIs('ElIni')?'text-danger fw-bold':''}}" aria-current="page" href="{{route('ElIni')}}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/form">Formulario</a>
+            <a class="nav-link {{request()->routeIs('Elformu')?'text-primary fw-bold':''}}" href="{{route('Elformu')}}">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{request()->routeIs('LosRecue')?'text-warning fw-bold':''}}" href="{{route('LosRecue')}}">Recuerdos</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
