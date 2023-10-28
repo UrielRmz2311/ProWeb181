@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\librocontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('principal');
-});
+Route::get('/', [librocontroller::class,'metodoprincipal'])->name('principal');
+Route::get('/form', [librocontroller::class,'metodoformulario'])->name('formulario');
+
+Route::post('/guardarlibro', [librocontroller::class,'guardarlibro'])->name('guardar');

@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active fw-bold" aria-current="page" href="#">PRINCIPAL</a>
+            <a class="nav-link {{request()->routeIs('/principal')?'text-primary fw-bold':''}}" aria-current="page" href="{{route('principal')}}">PRINCIPAL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#">REGISTRO DE LIBRO</a>
+            <a class="nav-link {{request()->routeIs('/formulario')?'text-primary fw-bold':''}}" href="{{route('formulario')}}">REGISTRO DE LIBRO</a>
           </li>
         </ul>
       </div>

@@ -6,6 +6,7 @@
     <title> @yield('titulo') </title>
     <link rel="stylesheet" href="{{ asset('css/fondo.css') }}">
     @vite(['resources/js/app.js'])
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     @include('partials.navbar')
